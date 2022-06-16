@@ -6,5 +6,5 @@
 TEST_CASE( "Arguments initialized") {
     vector<int> v {4, 2, 3};
     int t = minind(v);
-    REQUIRE( t == 1 );
+    REQUIRE( t == 2 );
 }

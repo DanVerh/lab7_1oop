@@ -20,7 +20,7 @@ int minind(vector<int> &v) {
     int index = 0;
     int n = v[0];
         for (int i = 1; i < v.size(); i++) {
-            if (v[i] < n) {
+            if (v[i] < n && v[i]%2!=0) {
                 n = v[i];
                 index = i;
             }
