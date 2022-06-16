@@ -17,5 +17,6 @@ int main() {
     print(v);
     cout << minind(v) << endl;
     
+    
     return 0;
 }

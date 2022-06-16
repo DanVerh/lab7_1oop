@@ -16,14 +16,14 @@ void print(vector<int> a) {
     cout << endl;
 }
 
-int minind(vector<int> &v) {
-    int index = 0;
-    int n = v[0];
-        for (int i = 1; i < v.size(); i++) {
-            if (v[i] < n && v[i]%2!=0) {
-                n = v[i];
-                index = i;
+long int minind(vector<int> a) {
+        vector <int> v;
+        for (int i = 0; i < a.size() + 1; i++) {
+            if (a[i] % 2 != 0) {
+                v.push_back(a[i]);
             }
         }
-    return index;
+    int min = *min_element(v.begin(), v.end());
+    long int minind = find(a.begin(), a.end(), min) - a.begin();
+    return minind;
 }
